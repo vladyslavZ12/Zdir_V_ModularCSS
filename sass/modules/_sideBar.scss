@@ -23,7 +23,7 @@
 
         p { 
             display:inline;
-            padding-left:10px;
+            @include addPadding(0 0 0 10px);
             }
     }
 
@@ -34,9 +34,9 @@
             margin: 5px -15px 0;
             li {
                 margin-top:13px;
-                padding:12px 0 12px 14%;
+                @include addPadding(12px 0 12px 14%);
 
-                &:hover{
+                li:hover{
                     background-color:$nav_hover;
                     cursor:pointer;
                     color:white;

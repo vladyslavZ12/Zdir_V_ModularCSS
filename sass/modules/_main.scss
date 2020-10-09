@@ -7,7 +7,7 @@ body{
 
     .bodyC {
         position:relative;
-        padding:0;
+        @include addPadding(0 0 0 0);
         background-color: $bodyC_bg;
         margin-right:-15px;
     }

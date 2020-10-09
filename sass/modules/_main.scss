@@ -1,0 +1,15 @@
+body{
+    font-family: $main-font;
+    font-size: $main-font-size;
+    background: $main-bg-color;
+
+
+
+    .bodyC {
+        position:relative;
+        @include addPadding(0 0 0 0);
+        background-color: $bodyC_bg;
+        margin-right:-15px;
+    }
+}
+

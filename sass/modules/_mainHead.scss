@@ -1,0 +1,85 @@
+.mainHead {
+    height:110px;
+    background-color: $mainHead_bg;
+
+    .clLogo { 
+        position:relative;
+        top: 50%;
+        transform: translateY(-50%);
+        left:40px;
+    }
+    
+
+    .yellowBoxNav {
+        position:relative;
+        display:inline-block;
+        /*float:right;*/
+        margin-left: 60px;
+        text-align: center;
+        vertical-align: middle;
+        cursor: pointer;
+        background-color: $yellow;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 55px;
+        height: 45px;
+        color:white;
+        z-index: 25;
+
+        span { 
+            position:relative;
+            top: 8px;
+            font-size:3rem; 
+        }
+
+        .dropdown-menu { 
+            margin-top:25px; 
+            @include addPadding(0 0 0 0);
+
+            .circleI { 
+                width:30px; height:30px;
+                 -moz-border-radius:50%; 
+                 border-radius:50%; 
+                 background-color: $circleI_bg; 
+                 color: $circleI_color; 
+                 text-align:center;
+                 font-size:1.7rem;
+                 margin:0 10px;
+                 @include addPadding(5px 0 0 0);
+            }
+
+            li {
+                position:relative;
+                margin-right:0;
+
+                a {
+                    @include addPadding(10px 0 10px 0 );
+                }
+
+                li:hover .emptyCircle{
+                    background-color: $mainHead_bg;
+                }
+
+                li:hover .circleI{
+                    background-color: $mainHead_bg;
+                }
+            }
+
+        .divider {
+            margin:0;
+        }
+    }
+
+        .dropdown-menu-right { 
+            right:-15px; 
+        }
+
+        .discussionDrop {
+            margin:10px 0;
+            width:200px;
+            @include addPadding(0 0 0 0);
+        }
+
+        
+    }
+}
